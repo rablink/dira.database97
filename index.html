@@ -338,7 +338,7 @@ let counter = document.getElementById("counter");
 
 function updateCounter() {
   if (count < target) {
-    count += Math.floor(Math.random() * 200) + 1;
+    count += Math.floor(Math.random() * 1000) + 1;
     if (count > target) count = target;
     counter.textContent = count.toLocaleString();
     setTimeout(updateCounter, speed);
